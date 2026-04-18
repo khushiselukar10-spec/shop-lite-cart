@@ -1,0 +1,104 @@
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 24px 80px;
+}
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4vw, 42px);
+  color: #1a1a2e;
+  margin: 0 0 24px;
+  font-weight: 800;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+@media (min-width: 880px) {
+  .grid { grid-template-columns: 1.5fr 1fr; align-items: start; }
+}
+.summary {
+  background: #fff;
+  border: 1px solid #efe9df;
+  border-radius: 14px;
+  padding: 22px;
+  position: sticky;
+  top: 90px;
+}
+.sumTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #1a1a2e;
+  margin: 0 0 16px;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 14px 0 18px;
+  padding-top: 14px;
+  border-top: 1px dashed #efe9df;
+}
+.checkout {
+  display: block;
+  text-align: center;
+  background: #e8572a;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+.checkout:hover { background: #d14617; }
+.note {
+  margin-top: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #2bb673;
+  text-align: center;
+}
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border: 1px dashed #efe9df;
+  border-radius: 14px;
+}
+.empty span { font-size: 64px; display: block; margin-bottom: 16px; }
+.empty h3 {
+  font-family: "Playfair Display", serif;
+  color: #1a1a2e;
+  margin: 0 0 10px;
+}
+.empty p {
+  font-family: "DM Sans", sans-serif;
+  color: #777;
+  margin: 0 0 22px;
+}
+.shopBtn {
+  background: #1a1a2e;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
