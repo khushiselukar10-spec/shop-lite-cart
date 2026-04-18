@@ -1,0 +1,105 @@
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 24px 80px;
+}
+.back {
+  font-family: "DM Sans", sans-serif;
+  color: #777;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 22px;
+}
+.back:hover { color: #e8572a; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+@media (min-width: 800px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+.thumb {
+  background: linear-gradient(135deg, #faf3e8, #f5e6d3);
+  border-radius: 22px;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  position: relative;
+}
+.cat {
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  color: #e8572a;
+  font-weight: 700;
+}
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 4vw, 40px);
+  color: #1a1a2e;
+  margin: 8px 0 12px;
+  line-height: 1.15;
+}
+.rating {
+  font-family: "DM Sans", sans-serif;
+  color: #555;
+  margin-bottom: 14px;
+}
+.rating strong { color: #f5a623; }
+.price {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #1a1a2e;
+  font-weight: 800;
+  margin: 18px 0;
+}
+.desc {
+  font-family: "DM Sans", sans-serif;
+  color: #555;
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.add {
+  background: #e8572a;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.add:hover { background: #d14617; }
+.added { background: #2bb673 !important; }
+.ghost {
+  background: transparent;
+  border: 1px solid #efe9df;
+  color: #1a1a2e;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+.ghost:hover { border-color: #1a1a2e; }
+.facts {
+  margin-top: 26px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #efe9df;
+  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+}

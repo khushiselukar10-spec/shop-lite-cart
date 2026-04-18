@@ -1,0 +1,83 @@
+.row {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 14px;
+  padding: 16px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #efe9df;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.thumb {
+  width: 70px; height: 70px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #faf3e8, #f5e6d3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+.info { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.name {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cat {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  color: #8a8a99;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.price {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #e8572a;
+  font-weight: 700;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.qty {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #efe9df;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.qty button {
+  background: #faf8f5;
+  border: none;
+  width: 28px; height: 28px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+.qty button:hover { background: #f5a623; color: #1a1a2e; }
+.qty span {
+  min-width: 32px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.remove {
+  background: none;
+  border: none;
+  color: #b94a3a;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: underline;
+}
